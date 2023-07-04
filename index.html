@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+    .gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 200px 200px 200px;
+  grid-gap: 20px 20px;
+  width: 70%;
+  margin: auto;
+  height: 100%;
+}
+.gallery > div:nth-child(1){
+    grid-row: span 2;
+    gr
+}
+.gallery > div:nth-child(2){
+    grid-row: span 2;
+}
+.gallery > div:nth-child(5){
+    grid-column: span 2;
+}
+.image {
+  /* width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+  overflow: hidden; */
+  border: 1px solid #ccc;
+}
+
+.image img {
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  object-fit: cover; */
+  width:100%;
+  height:100%;
+}
+
+    </style>
+</head>
+<body>
+    <div class="gallery">
+  <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWoQPrJvAncDxIlbv-IXDjOL9EEgkUU8qfVw&usqp=CAU" alt="Image 1"></div>
+  <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShXpuV0YXIpEMJFwZrN3Vfxdi3Wa_a0GyzVDVoDwNln1W5Fv-aH6MjjDoPSD6Og2gS6Og&usqp=CAU" alt="Image 2"></div>
+  <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1gRbfgUHh3zV0_Y7jU8MTHNOu8Ok4lq8Ylw&usqp=CAU" alt="Image 3"></div>
+  <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKn-X2ZRRr7DWK4gEnkQFFo_NSpS4dxoS-gg&usqp=CAU" alt="Image 4"></div>
+  <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEZvuqiMF2iOLXbkFco3Wt-aew-OpQ-tqCA&usqp=CAU" alt="Image 5"></div>
+  <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5MfTikD5sshtOllyQIs67wsL2b59IBLajFg&usqp=CAU" alt="Image 6"></div>
+  
+</div>
+
+</body>
+</html>
